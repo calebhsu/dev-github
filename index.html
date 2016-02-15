@@ -7,70 +7,87 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/styles.css">
 
+        <!-- Fonts --> 
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+
         <title>A GitHub Love Letter</title>
     </head>
     <body>
-        <header class="centerme">
+        <header class="right">
             <h1>A GitHub Love Letter (Tutorial)</h1>
         </header>
+
+        <div id="navbox">
         <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Getting Started</a></li>
-                <li><a href="#">Repositories</a></li>
-                <li><a href="#">Branches</a></li>
-                <li><a href="#">Committing & Pushing</a></li>
-                <li><a href="#">Pull Requests</a></li>
-            </ul>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#start">Getting Started</a></li>
+            <li><a href="#repos">Repositories</a></li>
+            <li><a href="#commits">Committing & Pushing</a></li>
+            <li><a href="#branches">Branches</a></li>
+          </ul>
         </nav>
+        </div>
+
         <main class="centerme">
-            <h3>Even though</h3>
-            <p>you aren't much without Git, I deeply appreciate<br>
-            your UI. Version control made simple that has<br>
-            saved me on multiple occasions when<br>
-            I write something<br>
-            that breaks everything else...</p>
-            <p>(Here's a letter that will help others get to know you better. Let me know what you think.)</p>
-            <h3>The best way to get started</h3>
-            <p>is to actually meet you at <a href="https://github.com/">GitHub</a> and<br>
-            pick a name (a good one, because this could end up on a resume). And that's all you need (aside from the confirmation email, but you already know that). <br >
-            Click around, get familiar with your empty profile (it won't be like that for long!) and keep reading...</p>
-            <h3>Your first repository</h3>
-            <p>can seem daunting but let's start at the basics. Click the + icon in the upper right and <br>
-            enter a reasonable repo name (short, so you it's easier for you to get to know Git ater on). Let's <br>
-            initialize with a README, which can be anything from blurb stub to almost-wiki. By the way, if you ever wanted to meet <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, now is the time.) And create repository!</p>
-            <p> In all honesty, the next few steps are more easily done through Git, but we're all about UI here right?</p>
-            <h3>Let's make a new file...</h3>
-            <mark>IMAGE HERE</mark>
-            <p>...yeah, that button right there. Give it a name, type some stuff, and...</p>
-            <h3>...Prepare to Commit!</h3>
-            <p>You sure everything looks nice? Scroll down. In days (or months, or years) to come, you'll probably want <br>
-            to remember what you did so enter a concise commit message here <br >
-            <mark>IMAGE HERE</mark><br>
-            (or use the default one) and give a short description of your newest change. <br>
-            Commit your new file, and...! <br>
-            See? It's all there, with your most recent commit message and all. <br>
-            Think of it as giving each "save" a timestamp and blurb. If you ever want to revert to your code from a certain point in time, you can do so by way of old commits.</p>
-            <h3>If you want to experiment</h3>
-            <p> with your code but aren't ready to <i>commit</i> yet (see what I did there?), branches are <br>
-            your friends. Simply create a new branch here <br>
-            <mark>IMAGE HERE</mark> <br>
-            and type away! <br>
-            <mark>IMAGE HERE</mark> <br>
-            Ready to merge those changes to your "real" code? Make sure you're <br>
-            on your branch, and open a new pull request <br>
-            <mark>IMAGE HERE</mark> <br>
-            If no merge conflicts have been found, simply merge your pull request <br>
-            <mark>IMAGE HERE</mark> <br>
-            and glory in the shiny new changes on your master branch!
-            </p>
-            <h3>There's endless more</h3>
-            <p>things to say (about forks and issues and such) but something tells <br>
-            me that you're better off getting comfortable doing this on the command line. <br>
-            That being said, I advise you read the next letter in this series...
-            <mark>Link HERE</mark> <br>
-            Best of luck!
-            </p>
+          <!-- About -->
+          <h3 id="about">Even though</h3>
+          <p>you aren't much without Git, I deeply appreciate<br>
+          your UI. Version control made simple that has<br>
+          saved me on multiple occasions when<br>
+          I write something<br>
+          that breaks everything else...</p>
+          <p>(Here's a letter that will help others get to know you better. Let me know what you think.)</p>
+
+          <!-- Getting Started -->
+          <h3 id="start">The best way to get started</h3>
+          <p>is to actually meet you at <a href="https://github.com/">GitHub</a> and<br>
+          pick a name (a good one, because this could end up on a resume). And that's all you need (aside from the confirmation email, but you already know that). <br >
+          Click around, get familiar with your empty profile (it won't be like that for long!) and keep reading...</p>
+
+          <!-- Repositories -->
+          <h3 id="repos">Your first repository</h3>
+          <p>can seem daunting but let's start at the basics. Click the + icon in the upper right and <br>
+          enter a reasonable repo name (short, so you it's easier for you to get to know Git ater on). Let's <br>
+          initialize with a README, which can be anything from blurb stub to almost-wiki. By the way, if you ever wanted to meet <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, now is the time.) And create repository!</p>
+          <p> In all honesty, the next few steps are more easily done through Git, but we're all about UI here right?</p>
+          <h3>Let's make a new file...</h3>
+          <mark>IMAGE HERE</mark>
+          <p>...yeah, that button right there. Give it a name, type some stuff, and...</p>
+
+          <!-- Committing & Pushing -->
+          <h3 id="commits">...Prepare to Commit!</h3>
+          <p>You sure everything looks nice? Scroll down. In days (or months, or years) to come, you'll probably want <br>
+          to remember what you did so enter a concise commit message here <br >
+          <mark>IMAGE HERE</mark><br>
+          (or use the default one) and give a short description of your newest change. <br>
+          Commit your new file, and...! <br>
+          See? It's all there, with your most recent commit message and all. <br>
+          Think of it as giving each "save" a timestamp and blurb. If you ever want to revert to your code from a certain point in time, you can do so by way of old commits.</p>
+
+          <!-- Branches -->
+          <h3 id="branches">If you want to experiment</h3>
+          <p> with your code but aren't ready to <i>commit</i> yet (see what I did there?), branches are <br>
+          your friends. Simply create a new branch here <br>
+          <mark>IMAGE HERE</mark> <br>
+          and type away! <br>
+          <mark>IMAGE HERE</mark> <br>
+          Ready to merge those changes to your "real" code? Make sure you're <br>
+          on your branch, and open a new pull request <br>
+          <mark>IMAGE HERE</mark> <br>
+          If no merge conflicts have been found, simply merge your pull request <br>
+          <mark>IMAGE HERE</mark> <br>
+          and glory in the shiny new changes on your master branch!
+          </p>
+          <h3>There's endless more</h3>
+          <p>things to say (about forks and issues and such) but something tells <br>
+          me that you're better off getting comfortable doing this on the command line. <br>
+          That being said, I advise you read the next letter in this series...
+          <mark>Link HERE</mark> <br>
+          Best of luck!
+          </p>
         </main>
         <footer>
             <p>Caleb Hsu, 2016</p>
